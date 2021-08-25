@@ -1,0 +1,15 @@
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\bin\OWS_IC.dll
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\bin\OWS_IC.pdb
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\bin\OWS_IC.xml
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\obj\Release\ResolveAssemblyReference.cache
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\obj\Release\OWS_IC.Resources.resources
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\obj\Release\OWS_IC.vbproj.GenerateResource.Cache
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\obj\Release\OWS_IC.dll
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\obj\Release\OWS_IC.xml
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\obj\Release\OWS_IC.pdb
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\obj\Debug\OWS_IC.Resources.resources
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\obj\Debug\OWS_IC.vbproj.GenerateResource.Cache
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\obj\Debug\OWS_IC.dll
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\obj\Debug\OWS_IC.xml
+C:\Users\samoore.BUDDIG_NT\Documents\Visual Studio 2005\Projects\OWS_IC\OWS_IC\obj\Debug\OWS_IC.pdb
