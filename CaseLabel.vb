@@ -35,7 +35,7 @@ Public Class CaseLabel
         End Set
     End Property
 
-    <System.Web.Script.Serialization.ScriptIgnore()> _
+    '<System.Web.Script.Serialization.ScriptIgnore()> _
     Public ReadOnly Property txtGTIN() As String
         Get
             Return String.Format("{0:D14}", Me._gtin)
@@ -51,7 +51,7 @@ Public Class CaseLabel
         End Set
     End Property
 
-    <System.Web.Script.Serialization.ScriptIgnore()> _
+    '<System.Web.Script.Serialization.ScriptIgnore()> _
     Public ReadOnly Property txtCodeDate() As String
         Get
             Return String.Format("{0:yyMMdd}", Me._date)
@@ -68,7 +68,7 @@ Public Class CaseLabel
         End Set
     End Property
 
-    <System.Web.Script.Serialization.ScriptIgnore()> _
+    '<System.Web.Script.Serialization.ScriptIgnore()> _
     Public ReadOnly Property txtVersion() As String
         Get
             Return String.Format("{0:D3}", Me._version)
@@ -84,7 +84,7 @@ Public Class CaseLabel
         End Set
     End Property
 
-    <System.Web.Script.Serialization.ScriptIgnore()> _
+    '<System.Web.Script.Serialization.ScriptIgnore()> _
     Public ReadOnly Property txtBatch() As String
         Get
             Return Me._batch
@@ -103,7 +103,7 @@ Public Class CaseLabel
         End Set
     End Property
 
-    <System.Web.Script.Serialization.ScriptIgnore()> _
+    '<System.Web.Script.Serialization.ScriptIgnore()> _
     Public ReadOnly Property txtSerial() As String
         Get
             Dim fmt As String = "{0,5}"
@@ -122,7 +122,7 @@ Public Class CaseLabel
         End Set
     End Property
 
-    <System.Web.Script.Serialization.ScriptIgnore()> _
+    '<System.Web.Script.Serialization.ScriptIgnore()> _
     Public ReadOnly Property txtLine() As String
         Get
             Return Right("0" & Me._line, 2)
@@ -139,7 +139,7 @@ Public Class CaseLabel
         End Set
     End Property
 
-    <System.Web.Script.Serialization.ScriptIgnore()> _
+    '<System.Web.Script.Serialization.ScriptIgnore()> _
     Public ReadOnly Property strYear() As String
         Get
             Return Right(Me._year.ToString(), 2)
@@ -172,8 +172,8 @@ Public Class CaseLabel
     ''' <returns></returns>
     ''' <remarks></remarks>
     Public Function Serialize() As String
-        Dim js As New System.Web.Script.Serialization.JavaScriptSerializer()
-        Return js.Serialize(Me)
+        'Dim js As New System.Web.Script.Serialization.JavaScriptSerializer()
+        'Return js.Serialize(Me)
     End Function
 
     ''' <summary>
@@ -185,8 +185,8 @@ Public Class CaseLabel
     Public Shared Function Deserialize(ByVal data As String) As CaseLabel
         If SE.NZ(data) = "" Then Return Nothing
         Try
-            Dim js As New System.Web.Script.Serialization.JavaScriptSerializer()
-            Return js.Deserialize(Of CaseLabel)(data)
+            'Dim js As New System.Web.Script.Serialization.JavaScriptSerializer()
+            'Return js.Deserialize(Of CaseLabel)(data)
         Catch ex As Exception
             Return Nothing
         End Try
