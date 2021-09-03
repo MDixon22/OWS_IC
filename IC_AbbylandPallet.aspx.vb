@@ -41,7 +41,7 @@ Partial Public Class IC_AbbylandPallet
         '_company = ConfigurationManager.AppSettings.Get("CompanyNumber").ToString
         '_whs = Common.GetVariable("Whse", Page).ToString
         _qtymax = ConfigurationManager.AppSettings.Get("UI.Abbyland.MaxQty").ToString
-        Me.lbPageTitle.Text = "OWS Inv Mgmt Rcv Co-Manufactured Pallet Tag"
+        Me.lbPageTitle.Text = "OWS Inventory Management <br />Receive Co-Manufactured Pallet Tag"
 
         If Not Page.IsPostBack Then
             'Setting up screen for start of 1st Pallet
