@@ -8,7 +8,6 @@ C:\Users\gwijtyk\Documents\GitHub\OWS_IC\bin\OWS_IC.xml
 C:\Users\gwijtyk\Documents\GitHub\OWS_IC\obj\Debug\OWS_IC.dll
 C:\Users\gwijtyk\Documents\GitHub\OWS_IC\obj\Debug\OWS_IC.xml
 C:\Users\gwijtyk\Documents\GitHub\OWS_IC\obj\Debug\OWS_IC.pdb
-C:\Users\gwijtyk\Documents\GitHub\OWS_IC\obj\Debug\OWS_IC.vbprojAssemblyReference.cache
 C:\Users\itintern\source\repos\OWS_IC\bin\OWS_IC.dll.config
 C:\Users\itintern\source\repos\OWS_IC\bin\OWS_IC.dll
 C:\Users\itintern\source\repos\OWS_IC\bin\OWS_IC.pdb
@@ -20,3 +19,4 @@ C:\Users\itintern\source\repos\OWS_IC\obj\Debug\OWS_IC.vbproj.CoreCompileInputs.
 C:\Users\itintern\source\repos\OWS_IC\obj\Debug\OWS_IC.dll
 C:\Users\itintern\source\repos\OWS_IC\obj\Debug\OWS_IC.xml
 C:\Users\itintern\source\repos\OWS_IC\obj\Debug\OWS_IC.pdb
+C:\Users\gwijtyk\Documents\GitHub\OWS_IC\obj\Debug\OWS_IC.vbproj.AssemblyReference.cache

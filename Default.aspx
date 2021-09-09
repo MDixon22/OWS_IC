@@ -13,8 +13,7 @@
 		<table class="table table-striped" style="font-size:3em">
 			<tr>
 				<td style="text-align: center; width: 240px;">
-				<asp:Label ID="lbPageTitle" runat="server" Font-Bold="True" ForeColor="DarkRed" 
-				Style="vertical-align: middle; text-align: center" Text="OW Inventory - Logon" BackColor="White" EnableViewState="False"></asp:Label>
+					<asp:Label ID="lbPageTitle" runat="server" Font-Bold="True" ForeColor="DarkRed" Style="vertical-align: middle; text-align: center; font-size: 2em;" Text="OW Inventory - Logon" BackColor="White" EnableViewState="False"></asp:Label>
 				</td>
 			</tr>
 			<tr>
@@ -24,41 +23,35 @@
 			<tr>
 				<td style="text-align: center;">
 				<asp:Label ID="lbDirections" runat="server" Font-Bold="True" ForeColor="DarkRed" Text="Scan or Enter UserID" 
-				Style="vertical-align: middle; text-align: center"></asp:Label>
+				Style="vertical-align: middle; text-align: center; font-size:2em;"></asp:Label>
 				</td>
 			</tr>
 		</table>
 		<table class="table table-striped" style="">
 			<tr>
-				<td style="width: 75px; text-align: right; height: 30px;">
-					<asp:Label ID="lbUserID" runat="server" Font-Bold="False" ForeColor="DarkRed" Text="UserID : " 
-								Style="vertical-align: middle; text-align: right" EnableViewState="False"></asp:Label></td>
-				<td style="width: 100px; height: 30px">
-					<asp:TextBox ID="txUserID" runat="server" MaxLength="10" pie:Maxlength="10" BorderColor="Black" BorderStyle="Solid" 
-								Font-Bold="False" AutoPostBack="True" TextMode="Password" BorderWidth="1px" Columns="10" >
-					</asp:TextBox></td>
+				<td>
+					<asp:Label ID="lbUserID" runat="server" Font-Bold="False" ForeColor="DarkRed" Text="UserID" Style="vertical-align: middle; text-align: right; font-size: 1em;" EnableViewState="False"></asp:Label></td>
+				<td>
+					<asp:TextBox ID="txUserID" runat="server" MaxLength="10" pie:Maxlength="10" BorderColor="Black" BorderStyle="Solid" Font-Bold="False" AutoPostBack="True" TextMode="Password" style="font-size:1em;" ></asp:TextBox>
+				</td>
 			</tr>
 			<tr>
-				<td style="width: 75px; text-align: right; height: 30px;">
-					<asp:Label ID="lbPassword" runat="server" Font-Bold="False" ForeColor="DarkRed" Text="Password : " 
-								Visible="False" Style="vertical-align: middle; text-align: right" EnableViewState="False" ></asp:Label></td>
-				<td style="width: 100px; height: 30px">
-					<asp:TextBox ID="txPassword" runat="server" MaxLength="10" pie:Maxlength="10" BorderColor="Black" BorderStyle="Solid"
-								Font-Bold="False" AutoPostBack="True" TextMode="Password" BorderWidth="1px" Columns="10" >
-					</asp:TextBox></td>
+				<td>
+					<asp:Label ID="lbPassword" runat="server" Font-Bold="False" ForeColor="DarkRed" Text="Password :" Visible="False" Style="vertical-align: middle; text-align: right" EnableViewState="False" style="font-size:1em;" ></asp:Label>
+				</td>
+				<td>
+					<asp:TextBox ID="txPassword" runat="server" MaxLength="10" pie:Maxlength="10" BorderColor="Black" BorderStyle="Solid" Font-Bold="False" AutoPostBack="True" TextMode="Password" Style="font-size:1em;" ></asp:TextBox>
+				</td>
 			</tr>
 		</table>
 		<div class="row flex-fill justify-content-center" style="margin-top: 2em">
 			<div class="col-2 1 d-grid">
-				<asp:Button ID="btRestart" runat="server" Font-Bold="True" Text="Restart" UseSubmitBehavior="False" />
+				<asp:Button ID="btRestart" runat="server" Font-Bold="True" Text="Restart" UseSubmitBehavior="False" Style="font-size:1em;" />
 			</div>
 			<div class ="col-2 offset-1 d-grid">
-				<asp:Label ID="lbError" runat="server" BorderColor="DarkRed" BorderStyle="Solid" 
-					Font-Bold="False" ForeColor="Red" Visible="false" 
-					Style="vertical-align: middle; text-align: center" BorderWidth="1px" Width="238px">
+				<asp:Label ID="lbError" runat="server" BorderColor="DarkRed" BorderStyle="Solid" Font-Bold="False" ForeColor="Red" Visible="false" Style="vertical-align: middle; text-align: center">
 				</asp:Label>
-				</div>
-
+			</div>
 		</div>
 		</div>
 	</form>

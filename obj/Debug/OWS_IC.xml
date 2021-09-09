@@ -3889,14 +3889,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_BuildCombo">
-<summary>
-IC_BuildCombo class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_BuildCombo._form1">
 <summary>
 form1 control.
@@ -6145,14 +6137,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_BinTransfertoTruck">
-<summary>
-IC_BinTransfertoTruck class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_BinTransfertoTruck._form1">
 <summary>
 form1 control.
@@ -7890,14 +7874,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_AdjPalletQty">
-<summary>
-IC_AdjPalletQty class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_AdjPalletQty._form1">
 <summary>
 form1 control.
@@ -8681,14 +8657,6 @@ lbError control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_BinTransfer">
-<summary>
-IC_BinTransfer class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_BinTransfer._form1">
