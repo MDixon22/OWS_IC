@@ -3343,14 +3343,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_ComboBuild">
-<summary>
-IC_ComboBuild class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_ComboBuild._form1">
 <summary>
 form1 control.
