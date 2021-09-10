@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{43E1DAF9-BA7F-43FA-B20B-1E853D609BAE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OWS_IC</RootNamespace>
+    <AssemblyName>OWS_IC</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>OWS_IC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>OWS_IC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IC_ComboRackToLine.aspx" />
+    <Content Include="IC_CycleCount.aspx" />
+    <Content Include="IC_ProductLocator.aspx" />
+    <Content Include="IC_PhysicalCountOWS.aspx" />
+    <Content Include="IC_SamplePalletEditNew.aspx" />
+    <Content Include="IC_WorkWithSamplePalletNew.aspx" />
+    <Content Include="IC_SamplePalletNew.aspx" />
+    <Content Include="IC_WorkWithShippingPalletNew.aspx" />
+    <Content Include="IC_ShippingPalletEditNew.aspx" />
+    <Content Include="IC_CreateInvPallet.aspx" />
+    <Content Include="IC_ComboToLine.aspx" />
+    <Content Include="IC_ComboToWip.aspx" />
+    <Content Include="IC_StockPalletTransfer17.aspx" />
+    <Content Include="IC_ShippingReceipt.aspx" />
+    <Content Include="IC_ReceiveTransfers.aspx" />
+    <Content Include="IC_PhysicalCount17.aspx" />
+    <Content Include="IC_PutawayMontHF.aspx" />
+    <Content Include="IC_PalletReceiptNew.aspx" />
+    <Content Include="IC_ComboVoidErrors.aspx" />
+    <Content Include="IC_ComboBuild.aspx" />
+    <Content Include="IC_ComboXfer_WC.aspx" />
+    <Content Include="IC_ComboReceipt_WC.aspx" />
+    <Content Include="IC_BuildCombo.aspx" />
+    <Content Include="IC_ComboMenu.aspx" />
+    <Content Include="IC_PhysicalCount.aspx" />
+    <Content Include="IC_SmokingRacks.aspx" />
+    <Content Include="IC_PutawayLot.aspx" />
+    <Content Include="IC_AbbylandPallet.aspx" />
+    <Content Include="IC_SamplePalletEdit.aspx" />
+    <Content Include="IC_StockPalletTransfer.aspx" />
+    <Content Include="IC_WorkWithSamplePallet.aspx" />
+    <Content Include="IC_SamplePallet.aspx" />
+    <Content Include="IC_VoidInventoryPallet.aspx" />
+    <Content Include="IC_RepackPalletComponents.aspx" />
+    <Content Include="IC_LoadPalletOnPacklandTruck.aspx" />
+    <Content Include="IC_BinTransfertoTruck.aspx" />
+    <Content Include="IC_NumberTwoPackland.aspx" />
+    <Content Include="IC_NumberTwoNew.aspx" />
+    <Content Include="IC_ShippingPalletReAssign.aspx" />
+    <Content Include="IC_WH_Receipt.aspx" />
+    <Content Include="IC_QCHold.aspx" />
+    <Content Include="IC_ShippingPalletsNew.aspx" />
+    <Content Include="IC_NumberTwo.aspx" />
+    <Content Include="IC_PutawayNew.aspx" />
+    <Content Include="IC_VoidShippedPallet.aspx" />
+    <Content Include="IC_AdjPalletQty.aspx" />
+    <Content Include="IC_ShippingPalletEdit.aspx" />
+    <Content Include="IC_WorkWithShippingPallet.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="IC_BinTransfer.aspx" />
+    <Content Include="IC_Menu.aspx" />
+    <Content Include="IC_Putaway.aspx" />
+    <Content Include="IC_ShippingPallets.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="IC_ReturnedPallet.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CaseLabel.vb" />
+    <Compile Include="Common.vb" />
+    <Compile Include="IC_ComboRackToLine.aspx.designer.vb">
+      <DependentUpon>IC_ComboRackToLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ComboRackToLine.aspx.vb">
+      <DependentUpon>IC_ComboRackToLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_CycleCount.aspx.designer.vb">
+      <DependentUpon>IC_CycleCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_CycleCount.aspx.vb">
+      <DependentUpon>IC_CycleCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ProductLocator.aspx.designer.vb">
+      <DependentUpon>IC_ProductLocator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ProductLocator.aspx.vb">
+      <DependentUpon>IC_ProductLocator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_PhysicalCountOWS.aspx.designer.vb">
+      <DependentUpon>IC_PhysicalCountOWS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_PhysicalCountOWS.aspx.vb">
+      <DependentUpon>IC_PhysicalCountOWS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_SamplePalletEditNew.aspx.designer.vb">
+      <DependentUpon>IC_SamplePalletEditNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_SamplePalletEditNew.aspx.vb">
+      <DependentUpon>IC_SamplePalletEditNew.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IC_WorkWithSamplePalletNew.aspx.designer.vb">
+      <DependentUpon>IC_WorkWithSamplePalletNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_WorkWithSamplePalletNew.aspx.vb">
+      <DependentUpon>IC_WorkWithSamplePalletNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_SamplePalletNew.aspx.designer.vb">
+      <DependentUpon>IC_SamplePalletNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_SamplePalletNew.aspx.vb">
+      <DependentUpon>IC_SamplePalletNew.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IC_WorkWithShippingPalletNew.aspx.designer.vb">
+      <DependentUpon>IC_WorkWithShippingPalletNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_WorkWithShippingPalletNew.aspx.vb">
+      <DependentUpon>IC_WorkWithShippingPalletNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ShippingPalletEditNew.aspx.designer.vb">
+      <DependentUpon>IC_ShippingPalletEditNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ShippingPalletEditNew.aspx.vb">
+      <DependentUpon>IC_ShippingPalletEditNew.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IC_CreateInvPallet.aspx.designer.vb">
+      <DependentUpon>IC_CreateInvPallet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_CreateInvPallet.aspx.vb">
+      <DependentUpon>IC_CreateInvPallet.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IC_ComboToLine.aspx.designer.vb">
+      <DependentUpon>IC_ComboToLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ComboToLine.aspx.vb">
+      <DependentUpon>IC_ComboToLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ComboToWip.aspx.designer.vb">
+      <DependentUpon>IC_ComboToWip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ComboToWip.aspx.vb">
+      <DependentUpon>IC_ComboToWip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_StockPalletTransfer17.aspx.designer.vb">
+      <DependentUpon>IC_StockPalletTransfer17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_StockPalletTransfer17.aspx.vb">
+      <DependentUpon>IC_StockPalletTransfer17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ShippingReceipt.aspx.designer.vb">
+      <DependentUpon>IC_ShippingReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ShippingReceipt.aspx.vb">
+      <DependentUpon>IC_ShippingReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ReceiveTransfers.aspx.designer.vb">
+      <DependentUpon>IC_ReceiveTransfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ReceiveTransfers.aspx.vb">
+      <DependentUpon>IC_ReceiveTransfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_PhysicalCount17.aspx.designer.vb">
+      <DependentUpon>IC_PhysicalCount17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_PhysicalCount17.aspx.vb">
+      <DependentUpon>IC_PhysicalCount17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_PutawayMontHF.aspx.designer.vb">
+      <DependentUpon>IC_PutawayMontHF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_PutawayMontHF.aspx.vb">
+      <DependentUpon>IC_PutawayMontHF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_PalletReceiptNew.aspx.designer.vb">
+      <DependentUpon>IC_PalletReceiptNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_PalletReceiptNew.aspx.vb">
+      <DependentUpon>IC_PalletReceiptNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ComboVoidErrors.aspx.designer.vb">
+      <DependentUpon>IC_ComboVoidErrors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ComboVoidErrors.aspx.vb">
+      <DependentUpon>IC_ComboVoidErrors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ComboBuild.aspx.designer.vb">
+      <DependentUpon>IC_ComboBuild.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ComboBuild.aspx.vb">
+      <DependentUpon>IC_ComboBuild.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ComboXfer_WC.aspx.designer.vb">
+      <DependentUpon>IC_ComboXfer_WC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ComboXfer_WC.aspx.vb">
+      <DependentUpon>IC_ComboXfer_WC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ComboReceipt_WC.aspx.designer.vb">
+      <DependentUpon>IC_ComboReceipt_WC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ComboReceipt_WC.aspx.vb">
+      <DependentUpon>IC_ComboReceipt_WC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_BuildCombo.aspx.designer.vb">
+      <DependentUpon>IC_BuildCombo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_BuildCombo.aspx.vb">
+      <DependentUpon>IC_BuildCombo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ComboMenu.aspx.designer.vb">
+      <DependentUpon>IC_ComboMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ComboMenu.aspx.vb">
+      <DependentUpon>IC_ComboMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_PhysicalCount.aspx.designer.vb">
+      <DependentUpon>IC_PhysicalCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_PhysicalCount.aspx.vb">
+      <DependentUpon>IC_PhysicalCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_SmokingRacks.aspx.designer.vb">
+      <DependentUpon>IC_SmokingRacks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_SmokingRacks.aspx.vb">
+      <DependentUpon>IC_SmokingRacks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_PutawayLot.aspx.designer.vb">
+      <DependentUpon>IC_PutawayLot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_PutawayLot.aspx.vb">
+      <DependentUpon>IC_PutawayLot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_AbbylandPallet.aspx.designer.vb">
+      <DependentUpon>IC_AbbylandPallet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_AbbylandPallet.aspx.vb">
+      <DependentUpon>IC_AbbylandPallet.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IC_SamplePalletEdit.aspx.designer.vb">
+      <DependentUpon>IC_SamplePalletEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_SamplePalletEdit.aspx.vb">
+      <DependentUpon>IC_SamplePalletEdit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IC_StockPalletTransfer.aspx.designer.vb">
+      <DependentUpon>IC_StockPalletTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_StockPalletTransfer.aspx.vb">
+      <DependentUpon>IC_StockPalletTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_WorkWithSamplePallet.aspx.designer.vb">
+      <DependentUpon>IC_WorkWithSamplePallet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_WorkWithSamplePallet.aspx.vb">
+      <DependentUpon>IC_WorkWithSamplePallet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_SamplePallet.aspx.designer.vb">
+      <DependentUpon>IC_SamplePallet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_SamplePallet.aspx.vb">
+      <DependentUpon>IC_SamplePallet.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IC_VoidInventoryPallet.aspx.designer.vb">
+      <DependentUpon>IC_VoidInventoryPallet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_VoidInventoryPallet.aspx.vb">
+      <DependentUpon>IC_VoidInventoryPallet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_RepackPalletComponents.aspx.designer.vb">
+      <DependentUpon>IC_RepackPalletComponents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_RepackPalletComponents.aspx.vb">
+      <DependentUpon>IC_RepackPalletComponents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_LoadPalletOnPacklandTruck.aspx.designer.vb">
+      <DependentUpon>IC_LoadPalletOnPacklandTruck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_LoadPalletOnPacklandTruck.aspx.vb">
+      <DependentUpon>IC_LoadPalletOnPacklandTruck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_BinTransfertoTruck.aspx.designer.vb">
+      <DependentUpon>IC_BinTransfertoTruck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_BinTransfertoTruck.aspx.vb">
+      <DependentUpon>IC_BinTransfertoTruck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_NumberTwoPackland.aspx.designer.vb">
+      <DependentUpon>IC_NumberTwoPackland.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_NumberTwoPackland.aspx.vb">
+      <DependentUpon>IC_NumberTwoPackland.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_NumberTwoNew.aspx.designer.vb">
+      <DependentUpon>IC_NumberTwoNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_NumberTwoNew.aspx.vb">
+      <DependentUpon>IC_NumberTwoNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ShippingPalletReAssign.aspx.designer.vb">
+      <DependentUpon>IC_ShippingPalletReAssign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ShippingPalletReAssign.aspx.vb">
+      <DependentUpon>IC_ShippingPalletReAssign.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IC_WH_Receipt.aspx.designer.vb">
+      <DependentUpon>IC_WH_Receipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_WH_Receipt.aspx.vb">
+      <DependentUpon>IC_WH_Receipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_QCHold.aspx.designer.vb">
+      <DependentUpon>IC_QCHold.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_QCHold.aspx.vb">
+      <DependentUpon>IC_QCHold.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ShippingPalletsNew.aspx.designer.vb">
+      <DependentUpon>IC_ShippingPalletsNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ShippingPalletsNew.aspx.vb">
+      <DependentUpon>IC_ShippingPalletsNew.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IC_NumberTwo.aspx.designer.vb">
+      <DependentUpon>IC_NumberTwo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_NumberTwo.aspx.vb">
+      <DependentUpon>IC_NumberTwo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_PutawayNew.aspx.designer.vb">
+      <DependentUpon>IC_PutawayNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_PutawayNew.aspx.vb">
+      <DependentUpon>IC_PutawayNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_VoidShippedPallet.aspx.designer.vb">
+      <DependentUpon>IC_VoidShippedPallet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_VoidShippedPallet.aspx.vb">
+      <DependentUpon>IC_VoidShippedPallet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_AdjPalletQty.aspx.designer.vb">
+      <DependentUpon>IC_AdjPalletQty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_AdjPalletQty.aspx.vb">
+      <DependentUpon>IC_AdjPalletQty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ShippingPalletEdit.aspx.designer.vb">
+      <DependentUpon>IC_ShippingPalletEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ShippingPalletEdit.aspx.vb">
+      <DependentUpon>IC_ShippingPalletEdit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IC_WorkWithShippingPallet.aspx.designer.vb">
+      <DependentUpon>IC_WorkWithShippingPallet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_WorkWithShippingPallet.aspx.vb">
+      <DependentUpon>IC_WorkWithShippingPallet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DB.vb" />
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_BinTransfer.aspx.designer.vb">
+      <DependentUpon>IC_BinTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_BinTransfer.aspx.vb">
+      <DependentUpon>IC_BinTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_Menu.aspx.designer.vb">
+      <DependentUpon>IC_Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_Menu.aspx.vb">
+      <DependentUpon>IC_Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_Putaway.aspx.designer.vb">
+      <DependentUpon>IC_Putaway.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_Putaway.aspx.vb">
+      <DependentUpon>IC_Putaway.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IC_ShippingPallets.aspx.designer.vb">
+      <DependentUpon>IC_ShippingPallets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ShippingPallets.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>IC_ShippingPallets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="IC_ReturnedPallet.aspx.designer.vb">
+      <DependentUpon>IC_ReturnedPallet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IC_ReturnedPallet.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>IC_ReturnedPallet.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1340</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

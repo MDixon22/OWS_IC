@@ -36,12 +36,12 @@ Partial Public Class IC_AbbylandPallet
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         'Verify the user is logged in 
         Common.CheckLogin(Page)
-        Me.lbUser.Text = "User : " & Common.GetVariable("User", Page).ToString
+        'Me.lbUser.Text = "User : " & Common.GetVariable("User", Page).ToString
         lbError.Visible = False
-        _company = ConfigurationManager.AppSettings.Get("CompanyNumber").ToString
-        _whs = Common.GetVariable("Whse", Page).ToString
+        '_company = ConfigurationManager.AppSettings.Get("CompanyNumber").ToString
+        '_whs = Common.GetVariable("Whse", Page).ToString
         _qtymax = ConfigurationManager.AppSettings.Get("UI.Abbyland.MaxQty").ToString
-        Me.lbPageTitle.Text = "OWS Inv Mgmt Rcv Co-Manufactured Pallet Tag"
+        Me.lbPageTitle.Text = "OWS Inventory Management <br />Receive Co-Manufactured Pallet Tag"
 
         If Not Page.IsPostBack Then
             'Setting up screen for start of 1st Pallet
@@ -61,25 +61,25 @@ Partial Public Class IC_AbbylandPallet
             Common.SaveVariable("Quantity", "", Page)
             Common.SaveVariable("ToBin", "", Page)
 
-            Me.txText.Text = ""
-            Me.txText.Visible = True
-            Me.lbPallet.Visible = False
-            Me.lbPalletVal.Visible = False
-            Me.lbPalletVal.Text = ""
-            Me.lbCaseLabel.Visible = False
-            Me.lbCaseLabelVal.Visible = False
-            Me.lbCaseLabelVal.Text = ""
-            Me.lbQuantity.Visible = False
-            Me.lbQuantityVal.Visible = False
-            Me.lbQuantityVal.Text = ""
-            Me.lbToBin.Visible = False
-            Me.lbToBinVal.Visible = False
-            Me.lbToBinVal.Text = ""
-            Me.lbError.Text = ""
-            Me.lbError.Visible = False
-            Me.lbFunction.Text = "1"
-            Me.btFinished.Visible = False
-            Me.btNextPallet.Visible = False
+            'Me.txText.Text = ""
+            'Me.txText.Visible = True
+            'Me.lbPallet.Visible = False
+            'Me.lbPalletVal.Visible = False
+            'Me.lbPalletVal.Text = ""
+            'Me.lbCaseLabel.Visible = False
+            'Me.lbCaseLabelVal.Visible = False
+            'Me.lbCaseLabelVal.Text = ""
+            'Me.lbQuantity.Visible = False
+            'Me.lbQuantityVal.Visible = False
+            'Me.lbQuantityVal.Text = ""
+            'Me.lbToBin.Visible = False
+            'Me.lbToBinVal.Visible = False
+            'Me.lbToBinVal.Text = ""
+            'Me.lbError.Text = ""
+            'Me.lbError.Visible = False
+            'Me.lbFunction.Text = "1"
+            'Me.btFinished.Visible = False
+            'Me.btNextPallet.Visible = False
 
             Me.lbPrompt.Text = "Scan or Enter Co-Manufactured Pallet#"
             Common.JavaScriptSetFocus(Page, Me.txText)

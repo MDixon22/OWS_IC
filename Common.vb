@@ -69,8 +69,8 @@ Public Class Common
     ''' <remarks></remarks>
     Public Shared Sub CheckLogin(ByRef uiPage As System.Web.UI.Page)
         If Common.GetVariable("LoggedIn", uiPage) Is Nothing Then
-            uiPage.Response.Clear()
-            uiPage.Response.Redirect("~/", True)
+            'uiPage.Response.Clear()
+            'uiPage.Response.Redirect("~/", True)
         End If
 
     End Sub
