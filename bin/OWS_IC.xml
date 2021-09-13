@@ -86,14 +86,6 @@ OWS_IC
  <param name="uiPage">Web page object holding the session state variables.</param>
  <remarks></remarks>
 </member>
-<member name="T:OWS_IC.IC_ComboRackToLine">
-<summary>
-IC_ComboRackToLine class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_ComboRackToLine._form1">
 <summary>
 form1 control.
@@ -4131,14 +4123,6 @@ btRestartCombo control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_ComboMenu">
-<summary>
-IC_ComboMenu class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_ComboMenu._form1">
