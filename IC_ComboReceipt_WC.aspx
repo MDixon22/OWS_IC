@@ -69,14 +69,14 @@
 					</td>	
 			</tr>
 		</table>
-			<asp:Label ID="lbError" runat="server" BorderColor="DarkRed" BorderStyle="Solid" BorderWidth="1px" Font-Bold="False" ForeColor="Red" Style="vertical-align: middle; text-align: center" Visible="False" Width="238px"></asp:Label>
+			<asp:Label ID="lbError" runat="server" BorderColor="DarkRed" BorderStyle="Solid" BorderWidth="1px" Font-Bold="False" ForeColor="Red" Style="vertical-align: middle; text-align: center" Visible="False"></asp:Label>
 		<table class="table table-striped" style="border="0" cellpadding="0" cellspacing="0">
 			<tr class="row flex-fill">
-				<td class="col-1" style="text-align: left; height: 30px;">
-					<asp:Button ID="btReturn" runat="server" Font-Size="Small" Text="To Menu" Font-Bold="True" EnableViewState="False" />
+				<td class="col-1" style="text-align: left;">
+					<asp:Button ID="btReturn" runat="server" Text="To Menu" Font-Bold="True" EnableViewState="False" />
 			</td>
 				<td class="col-1" style="text-align: right;">
-					<asp:Button ID="btFinished" runat="server" Height="35px" Text="Xfer Truck Done" Width="115px" Font-Bold="True" EnableViewState="False" />
+					<asp:Button ID="btFinished" runat="server" Text="Xfer Truck Done" Font-Bold="True" EnableViewState="False" />
 				</td>
 			</tr>
 		</table>
