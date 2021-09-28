@@ -5,70 +5,52 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Cut-Down Combos</title>
-        <%--<script language="javascript" type="text/javascript">
-		function keepMeAlive(){
-			if (document.getElementById('keepAliveIMG')) {
-				document.getElementById('keepAliveIMG').src = 'someimg.gif?x=' + escape(new Date());
-			}
-		}
-	window.setInterval("keepMeAlive()", 90000);
-    </script>--%>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
 </head>
-<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0">
+<body class="container-fluid" bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0">
     <form id="form1" runat="server">
     <div title="Cut-Down Combo - Void Errors" style="text-align: left">
-    <table style="width: 240px" border="0" cellpadding="0" cellspacing="0">
-		<tr>
-			<td style="text-align: center; width: 238px;">
-					<asp:Label ID="lbPageTitle" runat="server" Font-Bold="True" Font-Size="X-Small" ForeColor="DarkRed" 
-								Style="vertical-align: middle; text-align: center" Text="OW Inventory - Combo - Void Errors" EnableViewState="False" ></asp:Label></td>
+    <table class="table table-striped" style="border="0" cellpadding="0" cellspacing="0">
+		<tr class="row flex-fill">
+			<td class="col-1" style="text-align: center;">
+					<asp:Label ID="lbPageTitle" runat="server" Font-Bold="True" ForeColor="DarkRed" Style="vertical-align: middle; text-align: center" Text="OW Inventory - Combo - Void Errors" EnableViewState="False" ></asp:Label></td>
 		</tr>
-		<tr>
-			<td style="text-align: center; width: 238px;">
-				<asp:Label ID="lbUser" runat="server" Font-Bold="True" Font-Size="X-Small" ForeColor="Black" 
-						Style="vertical-align: middle; text-align: center" Text="User ID : " ></asp:Label></td>
+		<tr class="row flex-fill">
+			<td class="col-1" style="text-align: center;">
+				<asp:Label ID="lbUser" runat="server" Font-Bold="True" ForeColor="Black" Style="vertical-align: middle; text-align: center" Text="User ID : " ></asp:Label>
+			</td>
 		</tr>
-		<tr>
-			<td style="text-align: center; width: 238px;">
-				<asp:Label ID="lbPrompt" runat="server" Font-Bold="True" Font-Size="X-Small" ForeColor="DarkRed" 
-						Style="vertical-align: middle; text-align: center" Text="Scan or Enter Combo Id#" ></asp:Label></td>
+		<tr class="row flex-fill">
+			<td class="col-1" style="text-align: center;">
+				<asp:Label ID="lbPrompt" runat="server" Font-Bold="True" ForeColor="DarkRed" Style="vertical-align: middle; text-align: center" Text="Scan or Enter Combo Id#" ></asp:Label></td>
 		</tr>
 	</table>
-	<table style="width: 240px" border="0" cellpadding="0" cellspacing="0">
-		<tr>
-			<td style="width: 55px; vertical-align: bottom; text-align: right; height: 30px;">
-				<asp:Label ID="lbPallet" runat="server"
-					Font-Bold="False" Font-Size="X-Small" ForeColor="DarkRed" Style="vertical-align: middle; text-align: right" 
-					Text="Combo Id#-" EnableViewState="False"></asp:Label>
+	<table class="table table-striped" style="border="0" cellpadding="0" cellspacing="0">
+		<tr class="row flex-fill">
+			<td class="col-2" style="vertical-align: bottom; text-align: right;">
+				<asp:Label ID="lbPallet" runat="server"	Font-Bold="False" ForeColor="DarkRed" Style="vertical-align: middle; text-align: right" Text="Combo Id#-" EnableViewState="False"></asp:Label>
 			</td>
-			<td style="width: 185px; vertical-align: bottom; height: 30px">
-				<asp:TextBox ID="txPallet" runat="server" Font-Bold="False" Font-Size="XX-Small"
-					ForeColor="Black" Wrap="False" BorderColor="Black" AutoPostBack="True" BorderWidth="1px" Columns="12"></asp:TextBox></td>
+			<td class="col-2" style="vertical-align: bottom;">
+				<asp:TextBox ID="txPallet" runat="server" Font-Bold="False" ForeColor="Black" Wrap="False" BorderColor="Black" AutoPostBack="True" BorderWidth="1px" Columns="12"></asp:TextBox></td>
 		</tr>
-		<tr>
-			<td style="width: 55px; text-align: right">
-				&nbsp;</td>
-			<td style="width: 185px">
-				</td>
-		</tr>
-	</table>
-			<asp:Label ID="lbError" runat="server" BorderColor="DarkRed" BorderStyle="Solid"
-				BorderWidth="1px" Font-Bold="False" Font-Size="X-Small" ForeColor="Red" 
-				Style="vertical-align: middle; text-align: center" Visible="False" Width="238px">
-			</asp:Label>
-	<table style="width: 240px" border="0" cellpadding="0" cellspacing="0">
-		<tr>
-			<td style="text-align: left; height: 30px;">
-				<asp:Button ID="btReturn" runat="server" Font-Size="Medium" Height="35px" 
-						Text="To Menu" Width="115px" Font-Bold="True" EnableViewState="False" />
+		<tr class="row flex-fill">
+			<td class="col-2" style="">
 			</td>
-			<td style="text-align: right; height: 30px;">
-				<asp:Button ID="btRestart" runat="server"
-						Font-Size="Medium" Height="35px" Text="Restart Entry" Width="115px" Font-Bold="True" EnableViewState="False" />
+			<td class="col-2" style="">
 			</td>
 		</tr>
 	</table>
-	<%--<img id="keepAliveIMG" height="0" src="someimg.GIF" />--%></div>
+			<asp:Label ID="lbError" runat="server" BorderColor="DarkRed" BorderStyle="Solid" BorderWidth="1px" Font-Bold="False" ForeColor="Red" Style="vertical-align: middle; text-align: center" Visible="False"></asp:Label>
+	<table class="table table-striped" style="border="0" cellpadding="0" cellspacing="0">
+		<tr class="row flex-fill">
+			<td class="col-1" style="text-align: left;">
+				<asp:Button ID="btReturn" runat="server" Text="To Menu" Font-Bold="True" EnableViewState="False" />
+			</td>
+			<td class="col-1" style="text-align: right;">
+				<asp:Button ID="btRestart" runat="server" Text="Restart Entry" Font-Bold="True" EnableViewState="False" />
+			</td>
+		</tr>
+	</table>
    </form>
 </body>
 </html>

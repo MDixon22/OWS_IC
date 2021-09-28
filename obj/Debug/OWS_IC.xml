@@ -86,14 +86,6 @@ OWS_IC
  <param name="uiPage">Web page object holding the session state variables.</param>
  <remarks></remarks>
 </member>
-<member name="T:OWS_IC.IC_ComboRackToLine">
-<summary>
-IC_ComboRackToLine class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_ComboRackToLine._form1">
 <summary>
 form1 control.
@@ -218,14 +210,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_CycleCount">
-<summary>
-IC_CycleCount class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_CycleCount._Head1">
@@ -1868,14 +1852,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_CreateInvPallet">
-<summary>
-IC_CreateInvPallet class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_CreateInvPallet._Head1">
 <summary>
 Head1 control.
@@ -2020,14 +1996,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_ComboToLine">
-<summary>
-IC_ComboToLine class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_ComboToLine._form1">
 <summary>
 form1 control.
@@ -2152,14 +2120,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_ComboToWip">
-<summary>
-IC_ComboToWip class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_ComboToWip._form1">
@@ -3254,14 +3214,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_ComboVoidErrors">
-<summary>
-IC_ComboVoidErrors class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_ComboVoidErrors._form1">
 <summary>
 form1 control.
@@ -3595,14 +3547,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_ComboXfer_WC">
-<summary>
-IC_ComboXfer_WC class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_ComboXfer_WC._form1">
 <summary>
 form1 control.
@@ -3745,14 +3689,6 @@ btFinishedLoading control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_ComboReceipt_WC">
-<summary>
-IC_ComboReceipt_WC class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_ComboReceipt_WC._Head1">
@@ -4131,14 +4067,6 @@ btRestartCombo control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_ComboMenu">
-<summary>
-IC_ComboMenu class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_ComboMenu._form1">
