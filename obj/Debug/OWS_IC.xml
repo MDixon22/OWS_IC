@@ -212,14 +212,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_CycleCount">
-<summary>
-IC_CycleCount class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_CycleCount._Head1">
 <summary>
 Head1 control.
@@ -1858,14 +1850,6 @@ dgExistingProducts control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_CreateInvPallet">
-<summary>
-IC_CreateInvPallet class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_CreateInvPallet._Head1">
@@ -3561,14 +3545,6 @@ btRestartCombo control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_ComboXfer_WC">
-<summary>
-IC_ComboXfer_WC class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_ComboXfer_WC._form1">
