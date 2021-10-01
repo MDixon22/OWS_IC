@@ -13,22 +13,22 @@
             <table class="table table-striped">
 		        <tr class="row flex-fill justify-content-center">
 			        <td style="text-align: center">
-					        <asp:Label ID="lbPageTitle" runat="server" Font-Bold="True" Font-Size="X-Small" ForeColor="DarkRed" 
-								        Style="vertical-align: middle; text-align: center" Text="OW Smoking - Rack Processing" EnableViewState="False" ></asp:Label>
-                        <asp:Label ID="lbProcessType" runat="server" BorderColor="Black" BorderStyle="Solid"
-                            BorderWidth="1px" Font-Bold="False" Font-Size="X-Small" ForeColor="Black" Style="vertical-align: middle;
-                            text-align: right"></asp:Label></td>
-		        </tr>
-		        <tr class="row flex-fill justify-content-center">
-			        <td style="text-align: center">
-				        <asp:Label ID="lbUser" runat="server" Font-Bold="True" Font-Size="X-Small" ForeColor="Black" 
-						        Style="vertical-align: middle; text-align: center" Text="User ID : " ></asp:Label>
+					    <asp:Label ID="lbPageTitle" runat="server" Font-Bold="True" Font-Size="3em" ForeColor="DarkRed" 
+							Style="vertical-align: middle; text-align: center" Text="OW Smoking - Rack Processing" EnableViewState="False" ></asp:Label>
+                        <asp:Label ID="lbProcessType" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" 
+                            Font-Bold="False" Font-Size="3em" ForeColor="Black" Style="vertical-align: middle; text-align: right"></asp:Label>
 			        </td>
 		        </tr>
 		        <tr class="row flex-fill justify-content-center">
 			        <td style="text-align: center">
-				        <asp:Label ID="lbPrompt" runat="server" Font-Bold="True" Font-Size="X-Small" ForeColor="DarkRed" 
-						        Style="vertical-align: middle; text-align: center" Text="Scan or Enter Rack #" ></asp:Label>
+				        <asp:Label ID="lbUser" runat="server" Font-Bold="True" Font-Size="3em" ForeColor="Black" 
+						    Style="vertical-align: middle; text-align: center" Text="User ID : " ></asp:Label>
+			        </td>
+		        </tr>
+		        <tr class="row flex-fill justify-content-center">
+			        <td style="text-align: center">
+				        <asp:Label ID="lbPrompt" runat="server" Font-Bold="True" Font-Size="3em" ForeColor="DarkRed" 
+						    Style="vertical-align: middle; text-align: center" Text="Scan or Enter Rack #" ></asp:Label>
 			        </td>
 		        </tr>
 	        </table>
