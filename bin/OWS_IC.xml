@@ -795,14 +795,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_SamplePalletEditNew">
-<summary>
-IC_SamplePalletEditNew class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_SamplePalletEditNew._Head1">
 <summary>
 Head1 control.
@@ -902,9 +894,9 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OWS_IC.IC_SamplePalletEditNew._htxPallet">
+<member name="F:OWS_IC.IC_SamplePalletEditNew._htxCaseLabel">
 <summary>
-htxPallet control.
+htxCaseLabel control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -929,24 +921,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OWS_IC.IC_SamplePalletEditNew._lbBin">
-<summary>
-lbBin control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:OWS_IC.IC_SamplePalletEditNew._txBin">
-<summary>
-txBin control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_SamplePalletEditNew._lbPrinter">
 <summary>
 lbPrinter control.
@@ -959,6 +933,24 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:OWS_IC.IC_SamplePalletEditNew._txPrinter">
 <summary>
 txPrinter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OWS_IC.IC_SamplePalletEditNew._lbBin">
+<summary>
+lbBin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OWS_IC.IC_SamplePalletEditNew._txBin">
+<summary>
+txBin control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -1008,14 +1000,6 @@ dgExistingProducts control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_WorkWithSamplePalletNew">
-<summary>
-IC_WorkWithSamplePalletNew class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_WorkWithSamplePalletNew._form1">
@@ -1162,14 +1146,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_SamplePalletNew">
-<summary>
-IC_SamplePalletNew class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_SamplePalletNew._form1">
 <summary>
 form1 control.
@@ -1296,24 +1272,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OWS_IC.IC_SamplePalletNew._lbBin">
-<summary>
-lbBin control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:OWS_IC.IC_SamplePalletNew._txBin">
-<summary>
-txBin control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_SamplePalletNew._lbPrinter">
 <summary>
 lbPrinter control.
@@ -1326,6 +1284,24 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:OWS_IC.IC_SamplePalletNew._txPrinter">
 <summary>
 txPrinter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OWS_IC.IC_SamplePalletNew._lbBin">
+<summary>
+lbBin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OWS_IC.IC_SamplePalletNew._txBin">
+<summary>
+txBin control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -1375,14 +1351,6 @@ dgProductsScanned control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_WorkWithShippingPalletNew">
-<summary>
-IC_WorkWithShippingPalletNew class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_WorkWithShippingPalletNew._form1">
@@ -1527,14 +1495,6 @@ dgExistingProducts control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_ShippingPalletEditNew">
-<summary>
-IC_ShippingPalletEditNew class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_ShippingPalletEditNew._Head1">
@@ -2212,14 +2172,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_StockPalletTransfer17">
-<summary>
-IC_StockPalletTransfer17 class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_StockPalletTransfer17._form1">
 <summary>
 form1 control.
@@ -2353,14 +2305,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_ShippingReceipt">
-<summary>
-IC_ShippingReceipt class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_ShippingReceipt._form1">
@@ -2514,14 +2458,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_ReceiveTransfers">
-<summary>
-IC_ReceiveTransfers class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_ReceiveTransfers._form1">
@@ -4383,14 +4319,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_SmokingRacks">
-<summary>
-IC_SmokingRacks class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_SmokingRacks._form1">
 <summary>
 form1 control.
@@ -4966,14 +4894,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_SamplePalletEdit">
-<summary>
-IC_SamplePalletEdit class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_SamplePalletEdit._Head1">
 <summary>
 Head1 control.
@@ -5100,24 +5020,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OWS_IC.IC_SamplePalletEdit._lbBin">
-<summary>
-lbBin control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:OWS_IC.IC_SamplePalletEdit._txBin">
-<summary>
-txBin control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_SamplePalletEdit._lbPrinter">
 <summary>
 lbPrinter control.
@@ -5130,6 +5032,24 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:OWS_IC.IC_SamplePalletEdit._txPrinter">
 <summary>
 txPrinter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OWS_IC.IC_SamplePalletEdit._lbBin">
+<summary>
+lbBin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OWS_IC.IC_SamplePalletEdit._txBin">
+<summary>
+txBin control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -5179,14 +5099,6 @@ dgExistingProducts control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_StockPalletTransfer">
-<summary>
-IC_StockPalletTransfer class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_StockPalletTransfer._form1">
@@ -5322,14 +5234,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_WorkWithSamplePallet">
-<summary>
-IC_WorkWithSamplePallet class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_WorkWithSamplePallet._form1">
@@ -5476,14 +5380,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_IC_SamplePallet">
-<summary>
-IC_IC_SamplePallet class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_IC_SamplePallet._form1">
 <summary>
 form1 control.
@@ -5610,24 +5506,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OWS_IC.IC_IC_SamplePallet._lbBin">
-<summary>
-lbBin control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:OWS_IC.IC_IC_SamplePallet._txBin">
-<summary>
-txBin control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_IC_SamplePallet._lbPrinter">
 <summary>
 lbPrinter control.
@@ -5640,6 +5518,24 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:OWS_IC.IC_IC_SamplePallet._txPrinter">
 <summary>
 txPrinter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OWS_IC.IC_IC_SamplePallet._lbBin">
+<summary>
+lbBin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OWS_IC.IC_IC_SamplePallet._txBin">
+<summary>
+txBin control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -5689,14 +5585,6 @@ dgProductsScanned control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_VoidInventoryPallet">
-<summary>
-IC_VoidInventoryPallet class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_VoidInventoryPallet._form1">
@@ -5805,14 +5693,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_RepackPalletComponents">
-<summary>
-IC_RepackPalletComponents class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_RepackPalletComponents._form1">
@@ -6640,14 +6520,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_ShippingPalletsReAssign">
-<summary>
-IC_ShippingPalletsReAssign class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_ShippingPalletsReAssign._form1">
 <summary>
 form1 control.
@@ -6781,14 +6653,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_WH_Receipt">
-<summary>
-IC_WH_Receipt class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_WH_Receipt._form1">
@@ -6935,14 +6799,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_QCHold">
-<summary>
-IC_QCHold class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_QCHold._form1">
 <summary>
 form1 control.
@@ -7049,14 +6905,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_ShippingPalletsNew">
-<summary>
-IC_ShippingPalletsNew class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_ShippingPalletsNew._form1">
@@ -7705,14 +7553,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_VoidShippedPallet">
-<summary>
-IC_VoidShippedPallet class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_VoidShippedPallet._form1">
 <summary>
 form1 control.
@@ -7929,14 +7769,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_ShippingPalletEdit">
-<summary>
-IC_ShippingPalletEdit class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_ShippingPalletEdit._Head1">
 <summary>
 Head1 control.
@@ -8126,6 +7958,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:OWS_IC.IC_ShippingPalletEdit._lbComplete">
+<summary>
+lbComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:OWS_IC.IC_ShippingPalletEdit._lbPrinter">
 <summary>
 lbPrinter control.
@@ -8205,14 +8046,6 @@ dgExistingProducts control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_WorkWithShippingPallet">
-<summary>
-IC_WorkWithShippingPallet class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_WorkWithShippingPallet._form1">
@@ -8678,14 +8511,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_Menu">
-<summary>
-IC_Menu class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_Menu._form1">
 <summary>
 form1 control.
@@ -9108,14 +8933,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_ShippingPallets">
-<summary>
-IC_ShippingPallets class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_ShippingPallets._form1">
 <summary>
 form1 control.
@@ -9341,6 +9158,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:OWS_IC.IC_ShippingPallets._lbComplete">
+<summary>
+lbComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:OWS_IC.IC_ShippingPallets._lbPrinter">
 <summary>
 lbPrinter control.
@@ -9420,14 +9246,6 @@ dgExistingProducts control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_ReturnedPallet">
-<summary>
-IC_ReturnedPallet class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_ReturnedPallet._Head1">
