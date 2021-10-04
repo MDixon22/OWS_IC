@@ -145,7 +145,7 @@
     </table>
 	<table class="table table-striped" style="">
 		<tr class="row flex-fill">
-			<td class="col-2" style="text-align: left;>
+			<td class="col-2" style="text-align: left;">
 				<asp:Button ID="btReturn" runat="server" Text="To Menu" Width="115px" Font-Bold="True" EnableViewState="False" />
 			</td>
 			<td class="col-2" style="text-align: right;">

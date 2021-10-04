@@ -86,7 +86,7 @@ Partial Public Class IC_SamplePalletEditNew
 
                 Me.htxOrder.Visible = True
                 Me.lbOrder.Visible = True
-                Me.htxPallet.Visible = True
+                Me.htxCaseLabel.Visible = True
                 Me.lbCaseLabel.Visible = True
                 Me.txQuantity.Visible = True
                 Me.lbQuantity.Visible = True
@@ -100,7 +100,7 @@ Partial Public Class IC_SamplePalletEditNew
                 Me.btReturn.Visible = True
 
                 Me.htxOrder.Value = ""
-                Me.htxPallet.Value = ""
+                Me.htxCaseLabel.Value = ""
                 Me.txQuantity.Text = ""
                 Me.txBin.Text = ""
                 Me.txPrinter.Text = ""
@@ -114,7 +114,7 @@ Partial Public Class IC_SamplePalletEditNew
 
                 Me.htxOrder.Visible = True
                 Me.lbOrder.Visible = True
-                Me.htxPallet.Visible = True
+                Me.htxCaseLabel.Visible = True
                 Me.lbCaseLabel.Visible = True
                 Me.txQuantity.Visible = True
                 Me.lbQuantity.Visible = True
@@ -127,13 +127,13 @@ Partial Public Class IC_SamplePalletEditNew
                 Me.btRestart.Visible = True
                 Me.btReturn.Visible = True
 
-                Me.htxPallet.Value = ""
+                Me.htxCaseLabel.Value = ""
                 Me.txQuantity.Text = ""
                 Me.txBin.Text = ""
                 Me.txPrinter.Text = ""
 
                 Me.lbPrompt.Text = "Scan or Enter Case Label"
-                Common.JavaScriptSetFocus(Page, Me.htxPallet)
+                Common.JavaScriptSetFocus(Page, Me.htxCaseLabel)
 
             Case ScanModes.QuantityMode 'Prepare screen to accept quantity entry
                 Me.lbShipPallet.Visible = True
@@ -141,7 +141,7 @@ Partial Public Class IC_SamplePalletEditNew
 
                 Me.htxOrder.Visible = True
                 Me.lbOrder.Visible = True
-                Me.htxPallet.Visible = True
+                Me.htxCaseLabel.Visible = True
                 Me.lbCaseLabel.Visible = True
                 Me.txQuantity.Visible = True
                 Me.lbQuantity.Visible = True
@@ -176,7 +176,7 @@ Partial Public Class IC_SamplePalletEditNew
 
                 Me.htxOrder.Visible = False
                 Me.lbOrder.Visible = False
-                Me.htxPallet.Visible = False
+                Me.htxCaseLabel.Visible = False
                 Me.lbCaseLabel.Visible = False
                 Me.txQuantity.Visible = False
                 Me.lbQuantity.Visible = False
@@ -201,7 +201,7 @@ Partial Public Class IC_SamplePalletEditNew
 
                 Me.htxOrder.Visible = True
                 Me.lbOrder.Visible = True
-                Me.htxPallet.Visible = False
+                Me.htxCaseLabel.Visible = False
                 Me.lbCaseLabel.Visible = False
                 Me.txQuantity.Visible = False
                 Me.lbQuantity.Visible = False
@@ -247,7 +247,7 @@ Partial Public Class IC_SamplePalletEditNew
         Dim strHistoryDeleteProductInfo As String = "Product " & gtin & "with Lot " & lotno & "was deleted from Sample Pallet " & pallet
 
         Dim strSQLHistoryDeleteSampleProd As String = ""
-        strSQLHistoryDeleteSampleProd = "Insert Into IC_PalletsHistory (pk_nPallet,txDateTimeEntered,Process,UserID,Info)" & _
+        strSQLHistoryDeleteSampleProd = "Insert Into IC_PalletsHistory (pk_nPallet,txDateTimeEntered,Process,UserID,Info)" &
             "VALUES (" & pallet & ",'" & dtmScanned & "','SamplePallet','" & strUnit & "','" & strHistoryDeleteProductInfo & "')"
 
         Try
@@ -301,7 +301,7 @@ Partial Public Class IC_SamplePalletEditNew
         Dim strHistoryUpdateProductInfo As String = "Product " & gtin & "with Lot " & lotno & " on Pallet " & pallet & " - Quantity changed to " & caseqty
 
         Dim strSQLHistoryUpdateSampleProdQty As String = ""
-        strSQLHistoryUpdateSampleProdQty = "Insert Into IC_PalletsHistory (pk_nPallet,txDateTimeEntered,Process,UserID,Info)" & _
+        strSQLHistoryUpdateSampleProdQty = "Insert Into IC_PalletsHistory (pk_nPallet,txDateTimeEntered,Process,UserID,Info)" &
             "VALUES (" & pallet & ",'" & dtmScanned & "','SamplePallet','" & strUnit & "','" & strHistoryUpdateProductInfo & "')"
         Try
             'Update IC_Pallets record and write IC_History record
@@ -340,7 +340,7 @@ Partial Public Class IC_SamplePalletEditNew
         End Try
     End Function
 
-    Public Function AddProdToSamplePallet(ByVal pallet As Long, ByVal gtin As String, ByVal codedate As String, ByVal palletqty As Integer, _
+    Public Function AddProdToSamplePallet(ByVal pallet As Long, ByVal gtin As String, ByVal codedate As String, ByVal palletqty As Integer,
                                                 ByVal mfgord As Integer, ByVal orderid As Long, ByVal prodvariant As String, ByVal lotno As String) As Boolean
 
         AddProdToSamplePallet = False
@@ -349,13 +349,13 @@ Partial Public Class IC_SamplePalletEditNew
         Dim sqlPalletUpdate As String = ""
 
         Me.lbError.Text = ""
-        Dim strSQLInsertIC_Pallets As String = "INSERT Into IC_Pallets (pk_nPallet,GTIN,CodeDate,Company,CompanyID,PalletQty,txDateTimeEntered,txDateTimeModified,MfgOrd,OrderID,OrderLine,ProdVariant,Lot,SourcePallet) " & _
-        "VALUES (" & pallet & ",'" & gtin & "','" & codedate & "','2',2," & palletqty & ",'" & dtmScanned & "','" & dtmScanned & "','" & mfgord & "'," & orderid & ",0,'" & prodvariant & "','" & lotno & "'," & Me.htxPallet.Value & ")"
+        Dim strSQLInsertIC_Pallets As String = "INSERT Into IC_Pallets (pk_nPallet,GTIN,CodeDate,Company,CompanyID,PalletQty,txDateTimeEntered,txDateTimeModified,MfgOrd,OrderID,OrderLine,ProdVariant,Lot,SourcePallet) " &
+        "VALUES (" & pallet & ",'" & gtin & "','" & codedate & "','2',2," & palletqty & ",'" & dtmScanned & "','" & dtmScanned & "','" & mfgord & "'," & orderid & ",0,'" & prodvariant & "','" & lotno & "'," & Me.htxCaseLabel.Value & ")"
 
         Dim strHistoryAddedProductInfo As String = "Product " & gtin & "with Lot " & lotno & " was added to Sample Pallet " & pallet & " - with quantity - " & palletqty
 
         Dim strSQLHistoryInsertIC_Pallets As String = ""
-        strSQLHistoryInsertIC_Pallets = "Insert Into IC_PalletsHistory (pk_nPallet,txDateTimeEntered,Process,UserID,Info)" & _
+        strSQLHistoryInsertIC_Pallets = "Insert Into IC_PalletsHistory (pk_nPallet,txDateTimeEntered,Process,UserID,Info)" &
             "VALUES (" & pallet & ",'" & dtmScanned & "','SamplePallet','" & strUnit & "','" & strHistoryAddedProductInfo & "')"
         Try
             'Insert IC_Pallets record
@@ -405,7 +405,7 @@ Partial Public Class IC_SamplePalletEditNew
                 sqlCmdPalletUpdate.Parameters.AddWithValue("@pstrMfgOrd", mfgord)
                 sqlCmdPalletUpdate.Parameters.AddWithValue("@pstrLot", lotno)
                 sqlCmdPalletUpdate.Parameters.AddWithValue("@pnQuantity", _qty - palletqty)
-                sqlCmdPalletUpdate.Parameters.AddWithValue("@pnSourcePallet", Me.htxPallet.Value)
+                sqlCmdPalletUpdate.Parameters.AddWithValue("@pnSourcePallet", Me.htxCaseLabel.Value)
                 sqlCmdPalletUpdate.ExecuteNonQuery()
                 sqlCmdPalletUpdate.Dispose() : sqlCmdPalletUpdate = Nothing
                 DB.KillSQLConnection()
@@ -700,7 +700,7 @@ Partial Public Class IC_SamplePalletEditNew
             Exit Sub
         End If
         'Validate Pallet Tag- get product fields and compare values to PickProduct
-        If Me.htxPallet.Value.Length > 0 And IsNumeric(Me.htxPallet.Value) = True Then
+        If Me.htxCaseLabel.Value.Length > 0 And IsNumeric(Me.htxCaseLabel.Value) = True Then
             ' = CInt(ConfigurationManager.AppSettings.Get("UI.CaseLength").ToString) Or Me.htxCaseLabel.Value.Length = CInt(ConfigurationManager.AppSettings.Get("UI.AltCaseLength").ToString) Then
             Dim dsPallet As New Data.DataSet
             Dim sqlCmdPallet As New System.Data.SqlClient.SqlCommand
@@ -710,9 +710,9 @@ Partial Public Class IC_SamplePalletEditNew
                 Me.lbError.Visible = False
                 Dim iPallet As Integer
 
-                If IsNumeric(Me.htxPallet.Value) = True Then
+                If IsNumeric(Me.htxCaseLabel.Value) = True Then
                     'txCombo # entered is valid length check numeric
-                    iPallet = CLng(RTrim(Me.htxPallet.Value))
+                    iPallet = CLng(RTrim(Me.htxCaseLabel.Value))
 
                     'Validate that the Pallet scanned does exist in the system and get Status field
                     If Not DB.MakeSQLConnection("Warehouse") Then
@@ -724,7 +724,7 @@ Partial Public Class IC_SamplePalletEditNew
                             If dsPallet Is Nothing Then
                                 Me.lbError.Text = "Data Error occurred while validating Pallet scanned or entered! Check battery and wireless connection - then try again."
                                 Me.lbError.Visible = True
-                                Common.JavaScriptSetFocus(Page, Me.htxPallet)
+                                Common.JavaScriptSetFocus(Page, Me.htxCaseLabel)
                             Else
                                 If dsPallet.Tables(0).Rows.Count > 0 Then
                                     _gtin = dsPallet.Tables(0).Rows(0).Item("GTIN")
@@ -739,42 +739,42 @@ Partial Public Class IC_SamplePalletEditNew
                                         Case Is = "V"
                                             Me.lbError.Text = "Pallet Status is Void. See Supervisor to make sure Pallet Status is accurate"
                                             Me.lbError.Visible = True
-                                            Common.JavaScriptSetFocus(Page, Me.htxPallet)
+                                            Common.JavaScriptSetFocus(Page, Me.htxCaseLabel)
                                         Case Is = "H"
                                             Me.lbError.Text = "Pallet Status is QC Hold. Pallet cannot be used for Shipping Pallet - see supervisor"
                                             Me.lbError.Visible = True
-                                            Common.JavaScriptSetFocus(Page, Me.htxPallet)
+                                            Common.JavaScriptSetFocus(Page, Me.htxCaseLabel)
                                         Case Is = "W"
                                             Me.lbError.Text = "Pallet Status is Warehouse Hold. Pallet cannot be used for Shipping Pallet - see supervisor"
                                             Me.lbError.Visible = True
-                                            Common.JavaScriptSetFocus(Page, Me.htxPallet)
+                                            Common.JavaScriptSetFocus(Page, Me.htxCaseLabel)
                                     End Select
                                 Else 'Record does not exist for Pallet entered
                                     Me.lbError.Text = "Pallet # not in system - see supervisor."
                                     Me.lbError.Visible = True
-                                    Common.JavaScriptSetFocus(Page, Me.htxPallet)
+                                    Common.JavaScriptSetFocus(Page, Me.htxCaseLabel)
                                 End If
                             End If
                         Else
                             Me.lbError.Text = "Command Error occurred while validating Combo #! Check battery and wireless connection - then try again."
                             Me.lbError.Visible = True
-                            Common.JavaScriptSetFocus(Page, Me.htxPallet)
+                            Common.JavaScriptSetFocus(Page, Me.htxCaseLabel)
                         End If
                     Else
                         Me.lbError.Text = "Connection Error occurred while connecting to database! Check battery and wireless connection - then try again."
                         Me.lbError.Visible = True
-                        Common.JavaScriptSetFocus(Page, Me.htxPallet)
+                        Common.JavaScriptSetFocus(Page, Me.htxCaseLabel)
                     End If
 
                 Else
                     Me.lbError.Text = "Pallet # can not be blank, try again."
                     Me.lbError.Visible = True
-                    Common.JavaScriptSetFocus(Page, Me.htxPallet)
+                    Common.JavaScriptSetFocus(Page, Me.htxCaseLabel)
                 End If
             Catch ex As Exception
                 Me.lbError.Text = "Exception Error " & ex.Message.ToString & " occurred while validating Combo # entered! Check battery and wireless connection - then try again or see your supervisor."
                 Me.lbError.Visible = True
-                Common.JavaScriptSetFocus(Page, Me.htxPallet)
+                Common.JavaScriptSetFocus(Page, Me.htxCaseLabel)
             Finally
                 If Not dsPallet Is Nothing Then
                     dsPallet.Dispose() : dsPallet = Nothing

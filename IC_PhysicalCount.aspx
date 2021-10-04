@@ -5,117 +5,112 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Inventory Control Site</title>
-    <%--<script language="javascript" type="text/javascript">
-		function keepMeAlive(){
-			if (document.getElementById('keepAliveIMG')) {
-				document.getElementById('keepAliveIMG').src = 'someimg.gif?x=' + escape(new Date());
-			}
-		}
-	window.setInterval("keepMeAlive()", 90000);
-    </script>--%>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
 </head>
 <body bottommargin="0" leftmargin="2" rightmargin="2" topmargin="0">
     <form id="form1" runat="server">
-    <div style="text-align:left">
-		<table style="width: 242px" border="0" cellpadding="0" cellspacing="0">
-			<tr>
-				<td style="text-align: center">
-					<asp:Label ID="lbPageTitle" runat="server" Font-Bold="True" Font-Size="X-Small" ForeColor="DarkRed" 
-								Style="vertical-align: middle; text-align: center" Text="OW Inventory - FG Physical Count" BackColor="White" EnableViewState="False"></asp:Label>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: center">
-					<asp:Label ID="lbUser" runat="server" Font-Bold="True" Font-Size="X-Small" ForeColor="Black" 
-								Style="vertical-align: middle; text-align: center" Text="User ID : ">
-					</asp:Label>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: center">
-					<asp:Label ID="lbPrompt" runat="server" Font-Bold="True" Font-Size="X-Small" ForeColor="DarkRed" 
-							Style="vertical-align: middle; text-align: center" Text="Scan or Enter Bin Location" BackColor="Transparent"></asp:Label>
-				</td>
-			</tr>
-		</table>
-		<table style="width: 242px" border="0" cellpadding="0" cellspacing="0">
-			<tr>
-				<td style="width: 240px; text-align: center;" valign="middle">
-                    <asp:TextBox ID="txData" runat="server" AutoPostBack="True" BorderColor="Black" BorderWidth="1px"
-                        Columns="43" Font-Bold="False" Font-Size="XX-Small" ForeColor="Black"></asp:TextBox></td>
-			</tr>
-		</table>
-		<table style="width: 242px" border="0" cellpadding="0" cellspacing="0">
-			<tr>
-				<td style="width: 50px; text-align: right">
-					<asp:Label ID="lbBin" runat="server" Font-Bold="False" Font-Size="XX-Small" ForeColor="DarkRed" 
-						Style="vertical-align: middle; text-align: right" Text="Bin-" Visible="False"></asp:Label></td>
-				<td style="width: 190px;" valign="middle">
-                    <asp:Label ID="lbBinValue" runat="server" Font-Bold="False" Font-Size="XX-Small"
-                        ForeColor="Black" Style="vertical-align: middle; text-align: right" Visible="False"></asp:Label>
-                    <asp:Label ID="lbFunction" runat="server" Font-Bold="False" Font-Size="XX-Small"
-                        ForeColor="Black" Style="vertical-align: middle; text-align: right" Visible="False"
-                        Width="1px">0</asp:Label></td>
-			</tr>
-			<tr>
-				<td style="width: 50px; text-align: right">
-					<asp:Label ID="lbCaseLabel" runat="server" Font-Bold="False" Font-Size="XX-Small" ForeColor="DarkRed"
-						Style="vertical-align: middle; text-align: right" Text="CaseLabel-" Visible="False"></asp:Label></td>
-				<td style="width: 190px" valign="middle">
-                    <asp:Label ID="lbCaseLabelValue" runat="server" Font-Bold="False" Font-Size="XX-Small" ForeColor="Black"
-                        Style="vertical-align: middle; text-align: right" Visible="False"></asp:Label></td>
-			</tr>
-		</table>
-		<table style="width: 242px" border="0" cellpadding="0" cellspacing="0">
-			<tr>
-				<td style="width: 80px; text-align: right;">
-                    <asp:Label ID="lbSKU" runat="server" Font-Bold="False" Font-Size="XX-Small" ForeColor="Black"
-                        Style="vertical-align: middle; text-align: right" Visible="False"></asp:Label><asp:Label
-                            ID="lbDash" runat="server" Font-Bold="False" Font-Size="XX-Small" ForeColor="Black"
-                            Style="vertical-align: middle; text-align: center" Visible="False" Width="3px"> - </asp:Label></td>
-				<td align="center" style="width: 160px; text-align: left;">
-                    <asp:Label ID="lbProdDesc" runat="server" Font-Bold="False" Font-Size="XX-Small" ForeColor="Black"
-                        Style="vertical-align: middle; text-align: right" Visible="False"></asp:Label></td>
-			</tr>
-		</table>
-		<table style="width: 242px" border="0" cellpadding="0" cellspacing="0">
-			<tr>
-				<td style="width: 50px; text-align: right;">
-					<asp:Label ID="lbQuantity" runat="server" Font-Bold="False" Font-Size="XX-Small" ForeColor="DarkRed" Style="vertical-align: middle; text-align: right" Text="Qty-" Visible="False"></asp:Label></td>
-				<td align="center" style="width: 190px; text-align: left;">
-                    <asp:Label ID="lbQuantityValue" runat="server" Font-Bold="False" Font-Size="XX-Small"
-                        ForeColor="Black" Style="vertical-align: middle; text-align: right" Visible="False"></asp:Label></td>
-			</tr>
-		</table>
-		<table style="width: 242px" border="0" cellpadding="0" cellspacing="0">
-			<tr>
-				<td style="width: 120px; text-align: left;"><asp:Button ID="btNextLocation" runat="server"
-						Font-Size="Medium" Height="35px" Text="Next Location" Width="115px" 
-						Font-Bold="True" EnableViewState="False" Visible="False" /></td>
-				<td style="width: 120px; text-align: right;"><asp:Button ID="btnVerified" runat="server"
-						Font-Size="Medium" Height="35px" Text="Verified Count" Width="115px" 
-						Font-Bold="True" EnableViewState="False" Visible="False" /></td>
-			</tr>
-		</table>
-		<table style="width: 242px" border="0" cellpadding="0" cellspacing="0">
-		    <tr>
-		        <td style="width: 240px; height: 25px;" valign="middle">
-					<asp:Label ID="lbError" runat="server" BorderColor="DarkRed" BorderStyle="Solid"
-						BorderWidth="1px" Font-Bold="False" Font-Size="X-Small" ForeColor="Red"
-						Style="vertical-align: middle; text-align: center" Visible="False" Width="239px">
-					</asp:Label>
-				</td>
-			</tr>
-		</table>
-		<table style="width: 242px" border="0" cellpadding="0" cellspacing="0">
-			<tr>
-			    <td style="text-align: left; height: 30px;">
-					<asp:Button ID="btReturn" runat="server" Font-Size="Medium" Height="35px" Text="To Menu" Width="115px" Font-Bold="True" EnableViewState="False" /></td>
-				<td style="text-align: right; height: 30px;">
-					<asp:Button ID="btRestart" runat="server" Font-Size="Medium" Height="35px" Text="Restart Entry" Width="115px" Font-Bold="True" EnableViewState="False" /></td>
-			</tr>
-		</table>
-    </div>
+        <div class="container-fluid">
+		    <table class="table table-striped">
+			    <tr class="row flex-fill justify-content-center">
+				    <td style="text-align: center">
+					    <asp:Label ID="lbPageTitle" runat="server" Font-Bold="True" Font-Size="3em" ForeColor="DarkRed" 
+							Style="vertical-align: middle; text-align: center" Text="OW Inventory - FG Physical Count" EnableViewState="False">
+					    </asp:Label>
+				    </td>
+			    </tr>
+			    <tr class="row flex-fill justify-content-center">
+				    <td style="text-align: center">
+					    <asp:Label ID="lbUser" runat="server" Font-Bold="True" Font-Size="3em" ForeColor="Black" 
+							Style="vertical-align: middle; text-align: center" Text="User ID : ">
+					    </asp:Label>
+				    </td>
+			    </tr>
+			    <tr class="row flex-fill justify-content-center">
+				    <td style="text-align: center">
+					    <asp:Label ID="lbPrompt" runat="server" Font-Bold="True" Font-Size="3em" ForeColor="DarkRed" 
+							Style="vertical-align: middle; text-align: center" Text="Scan or Enter Bin Location">
+					    </asp:Label>
+				    </td>
+			    </tr>
+		    </table>
+		    <table class="table">
+			    <tr class="row flex-fill justify-content-center">
+				    <td class="col-10 d-flex flex-column text-center" style="border-style: hidden">
+                        <asp:TextBox ID="txData" runat="server" AutoPostBack="True" BorderColor="Black" BorderWidth="1px"
+                            Columns="43" Font-Bold="False" Font-Size="3em" ForeColor="Black"></asp:TextBox>
+				    </td>
+			    </tr>
+			    <tr class="row flex-fill justify-content-center">
+				    <td class="col-3 d-flex flex-column text-center" style="border-style: hidden">
+					    <asp:Label ID="lbBin" runat="server" Font-Bold="False" Font-Size="3em" ForeColor="DarkRed" 
+						    Style="vertical-align: middle; text-align: right" Text="Bin-" Visible="False"></asp:Label>
+				    </td>
+				    <td class="col-9 d-flex flex-column text-center" style="border-style: hidden">
+                        <asp:Label ID="lbBinValue" runat="server" Font-Bold="False" Font-Size="3em"
+                            ForeColor="Black" Style="vertical-align: middle; text-align: left" Visible="False"></asp:Label>
+                        <asp:Label ID="lbFunction" runat="server" Font-Bold="False" Font-Size="3em"
+                            ForeColor="Black" Style="vertical-align: middle; text-align: right" Visible="False">0</asp:Label>
+				    </td>
+			    </tr>
+			    <tr class="row flex-fill justify-content-center">
+				    <td class="col-3 d-flex flex-column text-center" style="border-style: hidden">
+					    <asp:Label ID="lbCaseLabel" runat="server" Font-Bold="False" Font-Size="3em" ForeColor="DarkRed"
+						    Style="vertical-align: middle; text-align: right" Text="CaseLabel-" Visible="False"></asp:Label>
+				    </td>
+				    <td class="col-9 d-flex flex-column text-center" style="border-style: hidden">
+                        <asp:Label ID="lbCaseLabelValue" runat="server" Font-Bold="False" Font-Size="3em" ForeColor="Black"
+                            Style="vertical-align: middle; text-align: left" Visible="False"></asp:Label>
+				    </td>
+			    </tr>
+			    <tr class="row flex-fill justify-content-center">
+				    <td class="col-4 d-flex flex-column text-center" style="border-style: hidden">
+                        <asp:Label ID="lbSKU" runat="server" Font-Bold="False" Font-Size="3em" ForeColor="Black"
+                            Style="vertical-align: middle; text-align: right" Visible="False"></asp:Label>
+                        <asp:Label ID="lbDash" runat="server" Font-Bold="False" Font-Size="3em" ForeColor="Black"
+                            Style="vertical-align: middle; text-align: center" Visible="False"> - </asp:Label>
+				    </td>
+				    <td class="col-8 d-flex flex-column text-center" style="border-style: hidden">
+                        <asp:Label ID="lbProdDesc" runat="server" Font-Bold="False" Font-Size="3em" ForeColor="Black"
+                            Style="vertical-align: middle; text-align: left" Visible="False"></asp:Label>
+				    </td>
+			    </tr>
+			    <tr class="row flex-fill justify-content-center">
+				    <td class="col-3 d-flex flex-column text-center" style="border-style: hidden">
+					    <asp:Label ID="lbQuantity" runat="server" Font-Bold="False" Font-Size="3em" ForeColor="DarkRed" 
+                            Style="vertical-align: middle; text-align: right" Text="Qty-" Visible="False"></asp:Label>
+				    </td>
+				    <td class="col-9 d-flex flex-column text-center" style="border-style: hidden">
+                        <asp:Label ID="lbQuantityValue" runat="server" Font-Bold="False" Font-Size="3em"
+                            ForeColor="Black" Style="vertical-align: middle; text-align: left" Visible="False"></asp:Label>
+				    </td>
+			    </tr>
+			    <tr class="row flex-fill justify-content-center">
+				    <td class="col-5 d-flex flex-column text-center" style="border-style: hidden">
+                        <asp:Button ID="btNextLocation" runat="server" Font-Size="3em" Font-Bold="True"
+						    Text="Next Location" EnableViewState="False" Visible="False" />
+				    </td>
+				    <td class="col-5 d-flex flex-column text-center" style="border-style: hidden">
+                        <asp:Button ID="btnVerified" runat="server" Font-Size="3em" Font-Bold="True" 
+						    Text="Verified Count" EnableViewState="False" Visible="False" />
+				    </td>
+			    </tr>
+		        <tr class="row flex-fill justify-content-center">
+		            <td class="col-10 d-flex flex-column text-center" style="border-style: hidden">
+					    <asp:Label ID="lbError" runat="server" BorderColor="DarkRed" BorderStyle="Solid" BorderWidth="1px" ForeColor="Red" 
+                            Font-Bold="False" Font-Size="3em" Style="vertical-align: middle; text-align: center" Visible="False">
+					    </asp:Label>
+				    </td>
+			    </tr>
+			    <tr class="row flex-fill justify-content-center">
+					<td class="col-5 d-flex flex-column text-start" style="border-style: hidden">
+						<asp:Button ID="btReturn" runat="server" Font-Size="3em" Text="Return" Font-Bold="True" EnableViewState="False" />
+					</td>
+					<td class="col-5 d-flex flex-column text-start" style="border-style: hidden">
+						<asp:Button ID="btRestart" runat="server" Font-Size="3em" Text="Restart Entry" Font-Bold="True" EnableViewState="False" />
+					</td>
+				</tr>
+            </table>
+        </div>
     </form>
 </body>
 </html>
