@@ -419,14 +419,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_ProductLocator">
-<summary>
-IC_ProductLocator class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_ProductLocator._Head1">
 <summary>
 Head1 control.
@@ -605,14 +597,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_PhysicalCountOWS">
-<summary>
-IC_PhysicalCountOWS class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_PhysicalCountOWS._form1">
@@ -2586,14 +2570,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_PhysicalCount17">
-<summary>
-IC_PhysicalCount17 class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_PhysicalCount17._form1">
 <summary>
 form1 control.
@@ -2774,14 +2750,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_PutawayMontHF">
-<summary>
-IC_PutawayMontHF class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_PutawayMontHF._form1">
 <summary>
 form1 control.
@@ -2960,14 +2928,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_PalletReceiptNew">
-<summary>
-IC_PalletReceiptNew class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_PalletReceiptNew._Head1">
@@ -4131,14 +4091,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_PhysicalCount">
-<summary>
-IC_PhysicalCount class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_PhysicalCount._form1">
 <summary>
 form1 control.
@@ -4524,14 +4476,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_PutawayLot">
-<summary>
-IC_PutawayLot class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_PutawayLot._form1">
@@ -5839,14 +5783,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_LoadPalletOnPacklandTruck">
-<summary>
-IC_LoadPalletOnPacklandTruck class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_LoadPalletOnPacklandTruck._form1">
 <summary>
 form1 control.
@@ -6025,14 +5961,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_NumberTwoPackland">
-<summary>
-IC_NumberTwoPackland class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_NumberTwoPackland._form1">
@@ -6258,14 +6186,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_NumberTwoNew">
-<summary>
-IC_NumberTwoNew class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_NumberTwoNew._form1">
@@ -7222,14 +7142,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="T:OWS_IC.IC_NumberTwo">
-<summary>
-IC_NumberTwo class.
-</summary>
-<remarks>
-Auto-generated class.
-</remarks>
-</member>
 <member name="F:OWS_IC.IC_NumberTwo._form1">
 <summary>
 form1 control.
@@ -7363,14 +7275,6 @@ btRestart control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_PutawayNew">
-<summary>
-IC_PutawayNew class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_PutawayNew._form1">
@@ -8743,14 +8647,6 @@ lbError control.
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="T:OWS_IC.IC_Putaway">
-<summary>
-IC_Putaway class.
-</summary>
-<remarks>
-Auto-generated class.
 </remarks>
 </member>
 <member name="F:OWS_IC.IC_Putaway._form1">
