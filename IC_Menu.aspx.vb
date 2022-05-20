@@ -525,7 +525,7 @@ Partial Public Class IC_Menu
 
             Case "92"
                 If _whs = "17" Then
-                    strURL = "http://kma2.carlbuddig.com/inventorycontrol/default.aspx"
+                    strURL = "http://ic21.carlbuddig.com/default.aspx"
                 Else
                     xBadSelect = True
                 End If
