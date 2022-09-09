@@ -202,10 +202,10 @@
 			    </tr>
 			    <tr class="row flex-fill justify-content-center">
 			        <td class="col-5 d-flex flex-column text-start" style="border-style: hidden">
-				        <asp:Button ID="btReturn" runat="server" Font-Size="3em" Text="To Menu" Font-Bold="True" EnableViewState="False" />
+				        <asp:Button ID="btReturn" runat="server" Font-Size="3em" Text="To Menu" Font-Bold="True" EnableViewState="False" UseSubmitBehavior=" false"/>
 			        </td>
 			        <td class="col-5 d-flex flex-column text-start" style="border-style: hidden">
-				        <asp:Button ID="btRestart" runat="server" Font-Size="3em" Text="Restart Entry" Font-Bold="True" EnableViewState="False" />
+				        <asp:Button ID="btRestart" runat="server" Font-Size="3em" Text="Restart Entry" Font-Bold="True" EnableViewState="False" UseSubmitBehavior="false" />
 			        </td>
 		        </tr>
 			    <tr class="row flex-fill justify-content-center">
