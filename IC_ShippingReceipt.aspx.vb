@@ -58,7 +58,8 @@ Partial Public Class IC_ShippingReceipt
         Me.txQty.Visible = False
         Me.lbQty.Visible = False
         Me.lbYN.Visible = False
-        Me.lbYorN.Visible = False
+        'lbYorN is not in the old version
+        'Me.lbYorN.Visible = False
         Me.txYN.Visible = False
         Me.txQty.Text = ""
         Me.txPallet.Text = ""
